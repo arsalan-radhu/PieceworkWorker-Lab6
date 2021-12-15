@@ -12,6 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using PieceworkWorker_Lab6.Context;
+
 
 namespace PieceworkWorker_Lab6
 {
@@ -35,6 +38,17 @@ namespace PieceworkWorker_Lab6
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddControllersWithViews();
+            //Allow .NET Core Version 3.0 to be considered compatible
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            // Here, we disable endpoint routing. It was an issue in upgrading from .NET Core 2.0
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+            //Adding the connection string! A;ways just like this for our purposes.
+            string connection =
+                @"Server=(localdb)\mssqllocaldb;Database=Lab6Database;Trusted_Connection=true";
+            //Adding the DB Context
+            services.AddDbContext<PieceworkWorkerContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

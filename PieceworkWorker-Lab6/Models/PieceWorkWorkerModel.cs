@@ -1,13 +1,14 @@
 ﻿/*
  * Name: Arsalan Arif Radhu
  * Date: 4 December 2021
+ * Modified: 15 December 2021
  * Student ID: 100813965
  * Description: PieceWorkWorkerModel file
  */
 
 using System.ComponentModel.DataAnnotations;
 
-namespace PieceworkWorker_Lab5.Models
+namespace PieceworkWorker_Lab6.Models
 {
     public class PieceWorkWorkerModel
     {
