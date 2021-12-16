@@ -1,17 +1,18 @@
+/*
+ * Name: Arsalan Arif Radhu
+ * Date: 4 December 2021
+ * Student ID: 100813965
+ * Description: StartUp file
+ */
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PieceworkWorker_Lab6.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PieceworkWorker_Lab6.Context;
 

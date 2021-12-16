@@ -1,4 +1,11 @@
-﻿@model PieceworkWorker_Lab6.Models.PieceWorkWorkerModel
+﻿<!--Name: Arsalan Arif Radhu
+Date: 4 December 2021
+Modified: 15 December 2021
+Student ID: 100813965
+Description: Worker Details page
+-->
+
+@model PieceworkWorker_Lab6.Models.PieceWorkWorkerModel
 
 @{
     ViewData["Title"] = "Details";
@@ -8,31 +15,31 @@
 <h1>Worker Details</h1>
 
 <div>
-    
+
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FirstName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.LastName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LastName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Messages)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Messages)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.isSenior)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.isSenior)
         </dd>
     </dl>
