@@ -152,5 +152,11 @@ namespace PieceworkWorker_Lab6.Controllers
         {
             return _context.PieceworkWorkers.Any(e => e.ID == id);
         }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Summary()
+        {
+            return View(await _context.PieceworkWorkers.ToListAsync());
+        }
     }
 }
